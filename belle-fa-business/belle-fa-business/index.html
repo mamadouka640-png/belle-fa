@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belle Fa Business – Catalogue Mode</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">👗</div>
+      <div>
+        <div class="logo-text">Belle Fa Business</div>
+        <span class="logo-sub">Vente en ligne · Dakar</span>
+      </div>
+    </div>
+    <a href="https://wa.me/221774514333?text=Bonjour, je voudrais commander" class="nav-contact">
+      💬 Commander
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✨ Nouvelle collection disponible</div>
+    <h1>La mode sénégalaise<br>à votre porte</h1>
+    <p>Robes, tenues modestes, ensembles tendance. Livraison à Dakar. Commande via WhatsApp.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Clientes satisfaites</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Note TikTok</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">48h</div>
+        <div class="stat-label">Livraison Dakar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTRES -->
+  <div class="filters-wrap">
+    <span class="filter-label">Filtrer :</span>
+    <button class="filter-btn active" data-filter="tout">Tout</button>
+    <button class="filter-btn" data-filter="robe">Robes</button>
+    <button class="filter-btn" data-filter="modeste">Tenues modestes</button>
+    <button class="filter-btn" data-filter="ensemble">Ensembles</button>
+    <button class="filter-btn" data-filter="nouveau">Nouveautés</button>
+  </div>
+
+  <!-- TITRE -->
+  <div class="section-head">
+    <h2>Notre Catalogue</h2>
+    <span class="section-count" id="count">8 articles</span>
+  </div>
+
+  <!-- GRILLE -->
+  <div class="grid" id="grid">
+
+    <!-- Produit 1 : Ensemble Noir & Jupe Plissée -->
+    <div class="card" data-cat="ensemble populaire">
+      <div class="card-img">
+        <img src="photos/photo1.jpeg" class="product-photo" alt="Ensemble Noir & Jupe Plissée">
+        <div class="card-badge">Populaire</div>
+        <div class="card-tiktok">▶ 277K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Ensemble</div>
+        <div class="card-name">Ensemble Noir & Jupe Plissée</div>
+        <div class="card-desc">Top noir boutonné manches courtes + jupe longue plissée ivoire. Élégance chic et intemporelle.</div>
+        <div class="card-footer">
+          <div class="card-price">28 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander l'Ensemble Noir & Jupe Plissée" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 2 : Robe Rose Soirée -->
+    <div class="card" data-cat="robe nouveau">
+      <div class="card-img">
+        <img src="photos/photo2.jpeg" class="product-photo" alt="Robe Rose Soirée">
+        <div class="card-badge new">Nouveau</div>
+        <div class="card-tiktok">▶ 116K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Robe de soirée</div>
+        <div class="card-name">Robe Rose Soirée</div>
+        <div class="card-desc">Robe longue une épaule, tissu scintillant rose poudré, nœud et fente élégante. Parfaite pour les cérémonies.</div>
+        <div class="card-footer">
+          <div class="card-price">35 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander la Robe Rose Soirée" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 3 : Robe Bleue Royale -->
+    <div class="card" data-cat="robe populaire">
+      <div class="card-img">
+        <img src="photos/photo3.jpeg" class="product-photo" alt="Robe Bleue Royale">
+        <div class="card-badge">Coup de cœur</div>
+        <div class="card-tiktok">▶ 90K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Robe longue</div>
+        <div class="card-name">Robe Bleue Royale</div>
+        <div class="card-desc">Robe fluide bleu électrique sans manches, col rond avec découpe, broderies sur la jupe évasée. Très tendance.</div>
+        <div class="card-footer">
+          <div class="card-price">25 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander la Robe Bleue Royale" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 4 : Robe Marine Col Montant -->
+    <div class="card" data-cat="modeste">
+      <div class="card-img">
+        <img src="photos/photo4.jpeg" class="product-photo" alt="Robe Marine Col Montant">
+        <div class="card-tiktok">▶ 78K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Tenue modeste</div>
+        <div class="card-name">Robe Marine Col Montant</div>
+        <div class="card-desc">Robe longue bleu marine, col montant froncé, manches évasées et ceinture à nouer dans le dos. Élégante et pudique.</div>
+        <div class="card-footer">
+          <div class="card-price">22 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander la Robe Marine Col Montant" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 5 : Robe Chemise Marine -->
+    <div class="card" data-cat="modeste nouveau">
+      <div class="card-img">
+        <img src="photos/photo5.jpeg" class="product-photo" alt="Robe Chemise Marine">
+        <div class="card-badge new">Nouveau</div>
+        <div class="card-tiktok">▶ 75K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Tenue modeste</div>
+        <div class="card-name">Robe Chemise Marine</div>
+        <div class="card-desc">Robe longue bleu marine style chemise boutonnée, ceinture à nouer, jupe à volants étagés. Du S au XXL.</div>
+        <div class="card-footer">
+          <div class="card-price">24 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander la Robe Chemise Marine" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 6 : Ensemble Jaune Pâle -->
+    <div class="card" data-cat="ensemble">
+      <div class="card-img">
+        <img src="photos/photo6.jpeg" class="product-photo" alt="Ensemble Jaune Pâle">
+        <div class="card-tiktok">▶ 68K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Ensemble</div>
+        <div class="card-name">Ensemble Jaune Pâle</div>
+        <div class="card-desc">Top col V manches courtes avec cordon + pantalon droit assorti. Coupe flatteuse, look professionnel et doux.</div>
+        <div class="card-footer">
+          <div class="card-price">26 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander l'Ensemble Jaune Pâle" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 7 : Robe Rose Broderie Anglaise -->
+    <div class="card" data-cat="robe populaire">
+      <div class="card-img">
+        <img src="photos/photo7.jpeg" class="product-photo" alt="Robe Rose Broderie Anglaise">
+        <div class="card-badge">Populaire</div>
+        <div class="card-tiktok">▶ 56K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Robe longue</div>
+        <div class="card-name">Robe Rose Broderie Anglaise</div>
+        <div class="card-desc">Robe rose fuchsia en broderie anglaise ajourée, manches bouffantes, col boutonné et jupe évasée à volants.</div>
+        <div class="card-footer">
+          <div class="card-price">30 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander la Robe Rose Broderie Anglaise" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 8 : Robe Blanche Modeste -->
+    <div class="card" data-cat="modeste populaire">
+      <div class="card-img">
+        <img src="photos/photo8.jpeg" class="product-photo" alt="Robe Blanche Modeste">
+        <div class="card-badge">Coup de cœur</div>
+        <div class="card-tiktok">▶ 52K</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Tenue modeste</div>
+        <div class="card-name">Robe Blanche Modeste</div>
+        <div class="card-desc">Robe longue blanche, manches bouffantes, ceinture perlée, jupe évasée à volants étagés. Idéale avec hijab.</div>
+        <div class="card-footer">
+          <div class="card-price">32 000 <span>FCFA</span></div>
+          <a href="https://wa.me/221774514333?text=Bonjour, je veux commander la Robe Blanche Modeste" class="card-wa">💬</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /grid -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Belle Fa Business</div>
+    <p>Vente en ligne de mode féminine · Dakar, Sénégal</p>
+    <div class="divider"></div>
+    <div class="footer-contacts">
+      <a href="tel:+221338144165">📞 33 814 41 65</a>
+      <a href="https://wa.me/221774514333">📱 77 743 79 63</a>
+      <a href="https://wa.me/221774772064">📱 77 477 20 64</a>
+    </div>
+    <div class="divider"></div>
+    <div class="copy">© 2025 Belle Fa Business · Tous droits réservés</div>
+  </footer>
+
+  <!-- BOUTON WHATSAPP FLOTTANT -->
+  <a href="https://wa.me/221774514333?text=Bonjour, je voudrais voir votre catalogue"
+     class="float-wa" title="Contacter sur WhatsApp">💬</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
